@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Js2-game</title>
+</head>
+<body>
+
+    <h1>GAME Rock, Paper and Scissor</h1>
+    <h3 id="playGame"> Please enter a username to play the game! </h3>
+
+    <form id="inputTheName">
+        <input type="text" placeholder="Username" id="userName">
+        
+        <button id="submitButton"> Submit </button>
+
+        <h3 id="userNameOut"></h3>
+        <h2 id="errorUserNameOutput"></h2>
+    </form>
+
+
+    <main>
+        <div id="pictures">
+            <img src="./pic/Rock-paper-scissors_(rock).png" id="rock" style="height: 100px; width: 100px;">
+            <img src="./pic/Rock-paper-scissors_(paper).png" id="paper" style="height: 100px; width: 100px;">
+            <img src="./pic/Rock-paper-scissors_(scissors).png" id="scissor" style="height: 100px; width: 100px;">
+        </div>
+        
+        <div id="tryAgain" >
+            <p id="tryAgainText"></p>
+            <button id="tryAgainButton">Try again</button>
+        </div>
+    </main>
+
+
+    <form>
+        <div>
+            <div id=" pickedHand">
+                <p id="youPicked">You picked:</p>
+                <p id="computerPicked">Computer picked:</p>
+            </div>
+        
+            <p id="yourScore"> Your score: </p>
+            
+      </div>
+
+      <div id="highscoreDiv">
+      <h5>High score:</h5>
+      <ol id="highscoreList">
+       
+      </ol>
+    </div>
+    </form>
+       
+</body>
+</html>
